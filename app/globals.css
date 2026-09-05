@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: var(--font-geist);
+  --font-mono: var(--font-mono);
+  --color-background: #f5f7f8;
+  --color-foreground: #14212b;
+  --color-card: #ffffff;
+  --color-card-foreground: #14212b;
+  --color-primary: #3454d1;
+  --color-primary-foreground: #ffffff;
+  --color-muted: #edf1f3;
+  --color-muted-foreground: #66737b;
+  --color-border: #dbe2e6;
+  --color-success: #23836b;
+  --color-warning: #b97a1a;
+  --color-danger: #bd554d;
+  --color-info: #397f9e;
+  --radius-lg: 1rem;
+  --radius-xl: 1.35rem;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #f5f7f8; color: #14212b; font-family: var(--font-geist), sans-serif; }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; }
+::selection { background: #cbd5ff; color: #14212b; }
+
+.dark { --color-background: #11181e; --color-foreground: #edf2f4; --color-card: #182228; --color-card-foreground: #edf2f4; --color-muted: #202c34; --color-muted-foreground: #9aaab3; --color-border: #2b3a43; }
